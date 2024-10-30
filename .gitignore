@@ -1,0 +1,5 @@
+# Ignorar archivos de sistema
+.DS_Store
+
+# Ignorar archivos .zip
+*.zip

@@ -1,0 +1,271 @@
+/* Variables de colores */
+:root {
+  --primary-color: #0d73a0;
+  --secondary-color: #5ca644;
+  --tertiary-color: #e4f9dc;
+  --quaternary-color: #f2f9fc;
+  --medium-color: #606060;
+  --base-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: var(--base-color);
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--base-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 1.5rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.community {
+  max-width: 100%;
+  background-color: var(--primary-color);
+  color: var(--base-color);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.community h1 {
+  font-size: 2rem;
+}
+
+.community h1.green {
+  color: var(--secondary-color);
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Aumenta el espacio entre imagen y texto */
+}
+
+.kitchen {
+  min-width: 350px; /* Ajusta el tamaño mínimo */
+  max-width: 600px; /* Ajusta el tamaño máximo */
+  width: 100%;
+}
+
+.intro h2 {
+  font-size: 1.8rem; /* Agranda el tamaño del texto del título */
+  margin: 1rem 0;
+  color: var(--primary-color);
+}
+
+.intro p {
+  font-size: 1.1rem; /* Agranda el tamaño del texto del párrafo */
+  color: var(--medium-color);
+}
+
+.intro div {
+  padding: 1.5rem; /* Añade padding al contenedor de texto */
+}
+
+.professional {
+  max-width: 100%;
+  background-color: var(--tertiary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 2rem 1rem;
+}
+
+.professional h3 {
+  font-size: 1.5rem; /* Ajusta el tamaño del título */
+  color: var(--primary-color);
+}
+
+.professional p {
+  font-size: 1.2rem; /* Ajusta el tamaño del párrafo */
+  color: var(--secondary-color);
+}
+
+.bonus {
+  text-align: center;
+  max-width: 500px;
+}
+
+.bonus h3 {
+  font-size: 1.5rem; /* Ajusta el tamaño del título */
+  color: var(--primary-color);
+}
+
+.bonus strong {
+  color: var(--secondary-color);
+}
+
+.bonus p {
+  font-size: 1rem; /* Ajusta el tamaño del párrafo */
+  color: var(--medium-color);
+}
+
+.info {
+  max-width: 100%;
+  background-color: var(--quaternary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 2rem 1rem;
+}
+
+.info p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+p.price {
+  color: var(--primary-color);
+}
+
+p.guarantee {
+  color: var(--secondary-color);
+}
+
+.offer {
+  text-align: center;
+}
+
+.offer h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.offer strong {
+  color: var(--secondary-color);
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  gap: 2.5rem;
+  margin: 2rem;
+}
+
+.details span {
+  color: var(--primary-color);
+}
+
+span.restrictions {
+  color: var(--medium-color);
+  font-size: 0.9rem;
+}
+
+.communities {
+  text-align: center;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+.communities img {
+  width: 100%;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--base-color);
+  font-size: 0.9rem;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+footer a {
+  color: var(--base-color);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  max-width: 100px; /* Ajusta el tamaño del logo */
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.footer-info button {
+  background-color: var(--secondary-color);
+  color: var(--base-color);
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links {
+  text-align: right;
+}
+
+.footer-links p {
+  margin: 0.5rem 0;
+}
+
+.footer-links p:last-child {
+  margin-top: 1rem;
+  border-top: 1px solid #fff;
+  padding-top: 0.5rem;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-info,
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-links p:last-child {
+    margin-top: 0.5rem;
+  }
+
+  .intro,
+  .details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .kitchen {
+    width: 100%; /* Ancho completo en pantallas pequeñas */
+    max-width: none; /* Sin límite de ancho */
+  }
+}
