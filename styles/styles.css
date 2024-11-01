@@ -368,7 +368,7 @@ footer a {
   align-items: center;
   background-color: var(--primary-color);
   color: white;
-  padding: 4rem 0;
+  padding: 2rem 0;
   width: 100%;
   max-width: 100%;
 }
@@ -379,7 +379,7 @@ footer a {
 }
 
 .info-item p {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
