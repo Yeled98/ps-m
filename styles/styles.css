@@ -297,6 +297,15 @@ footer a {
   border-bottom: 32px solid var(--primary-color);
 }
 
+.testimonials-header {
+  background-image: url("../imgs/testimonials.webp");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 32px solid var(--primary-color);
+  height: 50%;
+  min-height: 450px;
+}
+
 .header-top {
   display: flex;
   justify-content: end;
