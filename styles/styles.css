@@ -43,6 +43,32 @@ a {
   text-decoration: none;
 }
 
+.header-offer {
+  background-image: url("../imgs/offer.webp");
+  background-size: cover;
+  background-position: center;
+  color: var(--base-color);
+  padding: 128px;
+  height: 50%;
+}
+
+.header-offer img {
+  width: 100%;
+  max-width: 100px;
+}
+
+.header-offer h1 {
+  font-size: 2.5rem;
+}
+
+.header-offer h4 {
+  font-size: 1.2rem;
+}
+
+.header-offer button {
+  margin-top: 32px;
+}
+
 .community {
   max-width: 100%;
   background-color: var(--primary-color);
@@ -108,11 +134,11 @@ a {
 
 .bonus {
   text-align: center;
-  max-width: 500px;
+  max-width: 750px;
 }
 
 .bonus h3 {
-  font-size: 1.5rem; /* Ajusta el tamaño del título */
+  font-size: 2rem; /* Ajusta el tamaño del título */
   color: var(--primary-color);
 }
 
@@ -210,7 +236,8 @@ footer a {
 }
 
 .footer-logo img {
-  max-width: 100px; /* Ajusta el tamaño del logo */
+  width: 80%;
+  max-width: 150px; /* Ajusta el tamaño del logo */
 }
 
 .footer-info {
