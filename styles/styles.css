@@ -274,12 +274,27 @@ footer a {
   min-height: 750px;
   max-height: 1200px;
   padding: 0.5rem 2rem;
+  color: var(--base-color);
 }
 
 .home-header {
   background-image: url("../imgs/home.webp");
   background-size: cover;
   background-position: center;
+}
+
+.services-header {
+  background-image: url("../imgs/services.webp");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 32px solid var(--primary-color);
+}
+
+.gallery-header {
+  background-image: url("../imgs/gallery.webp");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 32px solid var(--primary-color);
 }
 
 .header-top {
@@ -328,11 +343,6 @@ footer a {
 
 .nav-links a:hover {
   color: var(--secondary-color);
-}
-
-.main-header h1 {
-  font-size: 3rem;
-  color: var(--base-color);
 }
 
 /* Barra de iconos */
@@ -446,6 +456,128 @@ footer a {
   margin: 0.5rem;
 }
 
+.services-header h1 {
+  padding-top: 6rem;
+  padding-left: 4rem;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.intro-text {
+  color: var(--primary-color);
+  font-size: 1.2em;
+  margin: 20px auto 40px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.service {
+  display: flex;
+  flex-direction: space-between;
+  gap: 32px;
+}
+
+.service img {
+  width: 50%;
+}
+
+.service-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service h2 {
+  color: var(--secondary-color);
+  font-size: 1.4em;
+  margin: 0 0 15px;
+}
+
+.service p {
+  font-size: 1em;
+  color: var(--font-color);
+  margin-bottom: 15px;
+}
+
+.read-more {
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.gallery-header h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+/* Estilo de la sección de servicios */
+.services-section {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.sidebar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  font-size: 1.4rem;
+  color: #606060; /* Color gris del texto */
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar li.active {
+  background-color: #accbec; /* Color de la opción activa */
+  font-weight: bold;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.sidebar li:not(.active):hover {
+  background-color: #f0f4f8; /* Color de fondo al pasar el ratón sobre las opciones */
+}
+
+.content {
+  flex: 1;
+}
+
+.interior-image {
+  width: 100%;
+}
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
   .footer-content {
@@ -483,5 +615,13 @@ footer a {
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .service {
+    flex-direction: column;
+  }
+
+  .service img {
+    width: 100%;
   }
 }
