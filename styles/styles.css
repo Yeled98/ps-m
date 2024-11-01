@@ -268,6 +268,184 @@ footer a {
   padding-top: 0.5rem;
 }
 
+/* Header */
+.main-header {
+  height: 75%;
+  min-height: 750px;
+  max-height: 1200px;
+  padding: 0.5rem 2rem;
+}
+
+.home-header {
+  background-image: url("../imgs/home.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.header-top {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.contact-info {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 32px;
+  color: var(--base-color);
+}
+
+.contact-info a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.logo img {
+  width: 100px;
+  max-width: 150px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--base-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  color: var(--base-color);
+}
+
+/* Barra de iconos */
+.info-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 4rem 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.info-item img {
+  width: 30px;
+  margin-bottom: 0.5rem;
+}
+
+.info-item p {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Sección Sherwin Williams */
+.sherwin-williams {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.sherwin-williams .image-container img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.sherwin-williams .text-container {
+  max-width: 500px;
+  font-size: 2rem;
+  padding: 4rem 0;
+  color: #333;
+}
+
+/* Testimonios */
+.testimonials {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f3f9fd;
+  max-width: 100%;
+}
+
+.testimonials h2 {
+  color: #1d72b8;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.review {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 250px;
+}
+
+.review p {
+  margin: 0.5rem 0;
+}
+
+.review-cta {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.review-cta a {
+  color: #1d72b8;
+  text-decoration: none;
+}
+
+/* Comunidades */
+.trusted-communities {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.trusted-communities h2 {
+  color: #1d72b8;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.community-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.community-logos img {
+  width: 100px;
+  max-width: 150px;
+  margin: 0.5rem;
+}
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
   .footer-content {
@@ -294,5 +472,16 @@ footer a {
   .kitchen {
     width: 100%; /* Ancho completo en pantallas pequeñas */
     max-width: none; /* Sin límite de ancho */
+  }
+
+  .header-top,
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
